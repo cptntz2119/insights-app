@@ -41,7 +41,7 @@ class App extends Component {
 
   render() {
     const { lists } = this.props;
-    console.log("doglist", lists);
+
     return (
       <div className="outter-container">
         <div className="table-container">

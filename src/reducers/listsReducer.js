@@ -24,11 +24,10 @@ const listsReducer = (state = initialState, action) => {
         droppableIdEnd,
         droppableIndexEnd,
         droppableIndexStart,
-        draggableId,
+        // draggableId,
         type,
       } = action.payload;
       const newState = [...state];
-      console.log(type);
 
       // dragging lists around
       if (type === "list") {

@@ -26,7 +26,7 @@ const DogList = ({ title, cards, listID }) => {
           <ListContainer {...provided.droppableProps} ref={provided.innerRef}>
             <h3>{title}</h3>
             {cards.map((card, index) => (
-              <DogCard key={card.id} index={index} text={card} id={index} />
+              <DogCard key={index} index={index} text={card} id={index} />
             ))}
             {provided.placeholder}
           </ListContainer>
