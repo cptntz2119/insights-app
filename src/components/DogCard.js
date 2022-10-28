@@ -10,7 +10,6 @@ const CardContainer = styled.div`
 `;
 
 const DogCard = ({ text, id, index }) => {
-  // console.log("dogcard", index, id, text);
   return (
     <Draggable draggableId={String(`${text}+${id}`)} index={index}>
       {(provided) => (

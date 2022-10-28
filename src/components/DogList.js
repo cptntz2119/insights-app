@@ -18,7 +18,7 @@ const DogList = ({ title, cards, listID }) => {
   useEffect(() => {
     fetchDogs();
   }, []);
-  // console.log("doglist", listID);
+
   return (
     <div className="lists-container">
       <Droppable droppableId={String(listID)}>
@@ -36,9 +36,7 @@ const DogList = ({ title, cards, listID }) => {
   );
 };
 
-// export default DogList;
 const mapStateToProps = (state) => {
-  // console.log("state", state);
   return {
     dogData: state,
   };

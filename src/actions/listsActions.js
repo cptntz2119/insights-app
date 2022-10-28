@@ -7,17 +7,7 @@ export const fetchDogs = () => {
       .get("https://dog.ceo/api/breeds/list/all")
       .then((response) => {
         const dogs = randomUniqTen(Object.keys(response.data.message));
-        // console.log("dogs in actions", dogs);
         dispatch(getList(dogs));
-
-        // const dogs = randomUniqTen(Object.keys(response.data.message));
-
-        // const middleIndex = Math.ceil(dogs.length / 2);
-
-        // const firstHalf = dogs.slice().splice(0, middleIndex);
-        // const secondHalf = dogs.slice().splice(-middleIndex);
-
-        // dispatch(getList(firstHalf, secondHalf));
       })
       .catch((error) => {
         console.log("ERROR", error);
@@ -32,7 +22,6 @@ const randomUniqTen = (arr) => {
   return result;
 };
 
-//---------------------------------------------
 export const getList = (arr) => {
   return {
     type: CONSTANTS.GET_DOGS,
