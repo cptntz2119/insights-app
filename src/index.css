@@ -1,0 +1,72 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: #0d1118;
+}
+
+.outer-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  margin-top: 10px;
+  background-color: white ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: #021313;
+  table-layout: fixed;
+  
+}
+
+.button-container{
+  margin-top: 30px;
+  text-align: center;
+}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    text-align: center;
+    background-color: #0d1118;
+  }
+  
+  .outer-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-container {
+    margin-top: 10px;
+    background-color: white ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    color: #021313;
+    table-layout: fixed;
+    
+  }
+  
+  .button-container{
+    margin-top: 30px;
+    text-align: center;
+  }
+}
